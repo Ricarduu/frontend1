@@ -1,0 +1,134 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #1943ca;
+    --light: #FFF;
+    --dark: #3333;
+    --ligth-sub: #f4f4f4;
+    --radius: 10px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    background-color: var(--ligth-sub);
+    margin-top: 90px;
+}
+
+#cabecalho{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 90px;
+    align-items: center;
+}
+
+
+#cabecalho h1{
+color:var(--light);
+
+}
+
+nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2px;
+            padding: 10px;
+            justify-content: center;           
+         
+ }
+
+ #cabecalho nav a {
+    color: var(--light);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+ }
+
+ /* Efeito de passar o mouse*/
+  #cabecalho nav a:hover {
+    background-color: var(--ligth-sub);
+    color: var(--hover-color);
+  }
+
+/* Estilizando o main */
+#main-content{
+    padding: 20px;
+    max-width: 900px;
+   
+    margin: 20px auto;
+    border-radius: 5px;
+  }
+
+  #main-content h2,
+  #main-content h3{
+    color:#333;
+    margin-top: 15px;
+  }
+
+  .hero{
+    display: flex;
+    padding: 48px;
+  }
+
+  .hero-text{
+  display:flex;
+  flex-direction: column;
+  gap: 30px;
+  color:#333;
+    }
+  
+section p{
+    color: #333;
+}
+
+.btn-link{
+    text-decoration: none;
+    background-color: var(--light-sub);
+    color: var(--primary-color);
+    font-weight: bold;
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+    border-radius: var(--radius);    
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-link:hover{
+    background-color: var(--primary-color);
+    color: var(--light);
+    transition: 0.3s;
+    transform: translateY(-3px);
+}
+
+#rodape{
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+ .logo{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+            
+ }
